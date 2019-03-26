@@ -22,6 +22,17 @@ func ExampleHit() {
 	// 99
 }
 
+func ExampleSS() {
+	var goku sayan
+
+	goku.Life = 100
+	goku.SpiritualStength = 0
+	goku.hit(10)
+	fmt.Printf("%d\n", int(goku.Life))
+	// Output:
+	// 90
+}
+
 func ExampleHit2() {
 	var goku sayan
 
