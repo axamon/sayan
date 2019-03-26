@@ -18,7 +18,7 @@ func TestGoku(t *testing.T) {
 	}
 }
 
-func ExampleM_hit() {
+func Example_hit() {
 	var goku sayan
 
 	goku.Life = 100
@@ -29,7 +29,7 @@ func ExampleM_hit() {
 	// 99
 }
 
-func ExampleSS() {
+func Example_checkSS() {
 	var goku sayan
 
 	goku.Life = 100
@@ -40,7 +40,7 @@ func ExampleSS() {
 	// 90
 }
 
-func ExampleAlive() {
+func Example_isAlive() {
 	var goku sayan
 
 	goku.Life = 100
@@ -61,7 +61,7 @@ func ExampleAlive() {
 
 }
 
-func ExampleMagichit() {
+func Example_magichit() {
 	var goku sayan
 	goku.Life = 100
 	goku.SpiritualStength = 100
