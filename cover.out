@@ -1,0 +1,12 @@
+mode: set
+github.com/axamon/sayan/main.go:17.43,19.2 1 1
+github.com/axamon/sayan/main.go:21.38,23.34 1 1
+github.com/axamon/sayan/main.go:26.2,29.23 2 1
+github.com/axamon/sayan/main.go:23.34,25.3 1 0
+github.com/axamon/sayan/main.go:33.45,34.9 1 1
+github.com/axamon/sayan/main.go:40.2,40.8 1 1
+github.com/axamon/sayan/main.go:35.24,36.16 1 1
+github.com/axamon/sayan/main.go:37.10,38.15 1 1
+github.com/axamon/sayan/main.go:43.13,46.16 2 0
+github.com/axamon/sayan/main.go:49.2,56.33 5 0
+github.com/axamon/sayan/main.go:46.16,48.3 1 0
