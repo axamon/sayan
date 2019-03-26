@@ -17,6 +17,12 @@ func TestGoku(t *testing.T) {
 	}
 }
 
+func TestMain(t *testing.T) {
+	// call flag.Parse() here if TestMain uses flags
+	// os.Exit(m.Run())
+	main()
+}
+
 func ExampleHit() {
 	var goku sayan
 
