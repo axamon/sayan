@@ -2,9 +2,6 @@ package main
 
 import (
 	"fmt"
-	"log"
-	"os"
-	"strconv"
 )
 
 type sayan struct {
@@ -44,16 +41,17 @@ func (person *sayan) isAlive() (alive bool) {
 
 func main() {
 
-	colpo, err := strconv.Atoi(os.Args[1])
-	if err != nil {
-		log.Println(err.Error())
-	}
-	var goku sayan
+	goku := goku(100, 200, 10)
 
-	goku.Life = 100
-	goku.SpiritualStength = 200
+	fmt.Printf("%.0f\n", goku.Life)
+}
+
+func goku(life, ss, colpo int) (goku sayan) {
+
+	goku.Life = float32(life)
+	goku.SpiritualStength = float32(ss)
 
 	goku.hit(colpo)
 
-	fmt.Printf("%.0f\n", goku.Life)
+	return
 }

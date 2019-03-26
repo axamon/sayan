@@ -2,13 +2,19 @@ package main
 
 import (
 	"fmt"
-	"os"
 	"testing"
 )
 
-func TestMain(m *testing.M) {
+func TestGoku(t *testing.T) {
 	// call flag.Parse() here if TestMain uses flags
-	os.Exit(m.Run())
+	// os.Exit(m.Run())
+	goku := goku(100, 200, 10)
+
+	if goku.Life == 99.95 {
+		return
+	} else {
+		t.Errorf("Errore %v\n", goku.Life)
+	}
 }
 
 func ExampleHit() {
