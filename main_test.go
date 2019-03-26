@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"testing"
 )
 
@@ -11,19 +12,13 @@ func TestGoku(t *testing.T) {
 	goku := goku(100, 200, 10)
 
 	if goku.Life == 99.95 {
-		return
+		t.Logf("ok %v", goku.Life)
 	} else {
 		t.Errorf("Errore %v\n", goku.Life)
 	}
 }
 
-func TestMain(t *testing.T) {
-	// call flag.Parse() here if TestMain uses flags
-	// os.Exit(m.Run())
-	main()
-}
-
-func ExampleHit() {
+func ExampleM_hit() {
 	var goku sayan
 
 	goku.Life = 100
@@ -35,17 +30,6 @@ func ExampleHit() {
 }
 
 func ExampleSS() {
-	var goku sayan
-
-	goku.Life = 100
-	goku.SpiritualStength = 0
-	goku.hit(10)
-	fmt.Printf("%d\n", int(goku.Life))
-	// Output:
-	// 90
-}
-
-func ExampleHit2() {
 	var goku sayan
 
 	goku.Life = 100
@@ -87,4 +71,9 @@ func ExampleMagichit() {
 	// Output:
 	// 100
 	// 90
+}
+
+func TestMain(m *testing.M) {
+	runTests := m.Run()
+	os.Exit(runTests)
 }
